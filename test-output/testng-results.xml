@@ -2,12 +2,16 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-01-22T06:42:15 EET" name="Suite" finished-at="2022-01-22T06:43:49 EET" duration-ms="93394">
+  <suite started-at="2022-02-05T20:52:09 EET" name="Suite" finished-at="2022-02-05T20:54:33 EET" duration-ms="143991">
     <groups>
+      <group name="smoke">
+        <method signature="Start.login()[pri:2, instance:main.Start@4229bb3f]" name="login" class="main.Start"/>
+        <method signature="Start.startApplication()[pri:1, instance:main.Start@4229bb3f]" name="startApplication" class="main.Start"/>
+      </group> <!-- smoke -->
     </groups>
-    <test started-at="2022-01-22T06:42:15 EET" name="TestChrome" finished-at="2022-01-22T06:43:49 EET" duration-ms="93394">
+    <test started-at="2022-02-05T20:52:09 EET" name="TestChrome" finished-at="2022-02-05T20:54:33 EET" duration-ms="143991">
       <class name="main.Start">
-        <test-method is-config="true" signature="prepareClassProperties(java.lang.String)[pri:0, instance:main.Start@a2431d0]" started-at="2022-01-22T06:42:15 EET" name="prepareClassProperties" finished-at="2022-01-22T06:42:28 EET" duration-ms="12523" status="PASS">
+        <test-method is-config="true" signature="prepareClassProperties(java.lang.String)[pri:0, instance:main.Start@4229bb3f]" started-at="2022-02-05T20:52:09 EET" name="prepareClassProperties" finished-at="2022-02-05T20:52:14 EET" duration-ms="5064" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,15 +22,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- prepareClassProperties -->
-        <test-method signature="startApplication()[pri:1, instance:main.Start@a2431d0]" started-at="2022-01-22T06:42:28 EET" name="startApplication" finished-at="2022-01-22T06:42:57 EET" duration-ms="29391" status="PASS">
+        <test-method signature="startApplication()[pri:1, instance:main.Start@4229bb3f]" started-at="2022-02-05T20:52:14 EET" name="startApplication" finished-at="2022-02-05T20:53:05 EET" duration-ms="51163" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startApplication -->
-        <test-method signature="login()[pri:2, instance:main.Start@a2431d0]" started-at="2022-01-22T06:42:57 EET" name="login" finished-at="2022-01-22T06:43:47 EET" duration-ms="49537" status="PASS">
+        <test-method signature="login()[pri:2, instance:main.Start@4229bb3f]" started-at="2022-02-05T20:53:05 EET" name="login" finished-at="2022-02-05T20:54:31 EET" duration-ms="86142" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method is-config="true" signature="closeApplication()[pri:0, instance:main.Start@a2431d0]" started-at="2022-01-22T06:43:47 EET" name="closeApplication" finished-at="2022-01-22T06:43:49 EET" duration-ms="1852" status="PASS">
+        <test-method is-config="true" signature="closeApplication()[pri:0, instance:main.Start@4229bb3f]" started-at="2022-02-05T20:54:31 EET" name="closeApplication" finished-at="2022-02-05T20:54:33 EET" duration-ms="1560" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApplication -->

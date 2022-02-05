@@ -9,7 +9,7 @@ import pom.LoginPage;
 
 public class ClassProperties {
 
-	WebDriver driver;
+	public static WebDriver driver;
 	FileInputStream readProperty;
 	JavascriptExecutor js;
 	LoginPage loginPage;

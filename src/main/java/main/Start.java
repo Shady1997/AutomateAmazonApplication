@@ -14,6 +14,7 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import pom.LoginPage;
+import utility.ExcelUtility;
 import utility.Utility;
 
 public class Start extends ClassProperties {
@@ -43,7 +44,7 @@ public class Start extends ClassProperties {
 		loginPage = new LoginPage(driver);
 	}
 
-	@Test(priority = 1)
+	@Test(priority = 1, groups = "smoke")
 	private void startApplication() throws InterruptedException {
 		// Mazimize current window
 		driver.manage().window().maximize();
@@ -53,20 +54,20 @@ public class Start extends ClassProperties {
 		Utility.captureScreenshot(driver, "LoginPage");
 	}
 
-	@Test(priority = 2)
+	@Test(priority = 2, groups = "smoke")
 	private void login() throws InterruptedException {
 		// click sign button
 		loginPage.signinButton.click();
 		// wait for 5 sec
 		Thread.sleep(5000);
 		// add username
-		loginPage.userName.sendKeys("shadyahmed01091997@outlook.com");
+		loginPage.userName.sendKeys(ExcelUtility.getUserName());
 		// click continue button
 		loginPage.continueButton.click();
 		// wait for 5 sec
 		Thread.sleep(5000);
 		// add password
-		loginPage.password.sendKeys("P@ssw0rd");
+		loginPage.password.sendKeys(ExcelUtility.getPassword());
 		// click login button
 		loginPage.loginButton.click();
 		// wait for 5 sec
@@ -82,6 +83,10 @@ public class Start extends ClassProperties {
 	@AfterTest
 	private void closeApplication() {
 		driver.quit();
+	}
+
+	public static void getScreenshotOnFailure() {
+		Utility.captureScreenshot(driver, "fail");
 	}
 
 }

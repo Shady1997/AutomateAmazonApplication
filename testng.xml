@@ -3,17 +3,19 @@
 <!-- to run test sequentially change thread count from 2 to 1 and enable 
 	firefox -->
 <suite name="Suite" parallel="tests" thread-count="2">
+	<listeners>
+		<listener class-name="reports.MyListener" />
+	</listeners>
 	<test name="TestChrome">
 		<parameter name="browser" value="Chrome" />
 		<classes>
 			<class name="main.Start">
 				<methods>
-					<!-- <exclude name="login" /> -->
+					<exclude name="chooseDragAndDrop" />
 				</methods>
 			</class>
 		</classes>
 	</test>
-	<!-- <test name="TestFirefox"> <parameter name="browser" value="Firefox" 
-		/> <classes> <class name="main.Start" /><methods> <exclude name="chooseDragAndDrop" 
-		/> </methods> </classes> </test> -->
+	<!--<test name="TestFirefox"> <parameter name="browser" value="Firefox" 
+		/> <classes> <class name="main.Start" /> </classes> </test> -->
 </suite>
