@@ -9,7 +9,7 @@
     <classes>
       <class name="main.Start">
         <methods>
-          <include name="startApplication"/>
+          <include name="login"/>
           <include name="closeApplication"/>
           <include name="prepareClassProperties"/>
         </methods>

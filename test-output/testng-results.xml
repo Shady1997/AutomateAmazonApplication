@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-02-05T20:52:09 EET" name="Suite" finished-at="2022-02-05T20:54:33 EET" duration-ms="143991">
+  <suite started-at="2022-02-07T11:42:18 EET" name="Suite" finished-at="2022-02-07T11:43:29 EET" duration-ms="71274">
     <groups>
       <group name="smoke">
         <method signature="Start.login()[pri:2, instance:main.Start@4229bb3f]" name="login" class="main.Start"/>
         <method signature="Start.startApplication()[pri:1, instance:main.Start@4229bb3f]" name="startApplication" class="main.Start"/>
       </group> <!-- smoke -->
     </groups>
-    <test started-at="2022-02-05T20:52:09 EET" name="TestChrome" finished-at="2022-02-05T20:54:33 EET" duration-ms="143991">
+    <test started-at="2022-02-07T11:42:18 EET" name="TestChrome" finished-at="2022-02-07T11:43:29 EET" duration-ms="71274">
       <class name="main.Start">
-        <test-method is-config="true" signature="prepareClassProperties(java.lang.String)[pri:0, instance:main.Start@4229bb3f]" started-at="2022-02-05T20:52:09 EET" name="prepareClassProperties" finished-at="2022-02-05T20:52:14 EET" duration-ms="5064" status="PASS">
+        <test-method is-config="true" signature="prepareClassProperties(java.lang.String)[pri:0, instance:main.Start@4229bb3f]" started-at="2022-02-07T11:42:18 EET" name="prepareClassProperties" finished-at="2022-02-07T11:42:22 EET" duration-ms="4675" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -22,15 +22,54 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- prepareClassProperties -->
-        <test-method signature="startApplication()[pri:1, instance:main.Start@4229bb3f]" started-at="2022-02-05T20:52:14 EET" name="startApplication" finished-at="2022-02-05T20:53:05 EET" duration-ms="51163" status="PASS">
+        <test-method signature="startApplication()[pri:1, instance:main.Start@4229bb3f]" started-at="2022-02-07T11:42:22 EET" name="startApplication" finished-at="2022-02-07T11:42:56 EET" duration-ms="33855" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startApplication -->
-        <test-method signature="login()[pri:2, instance:main.Start@4229bb3f]" started-at="2022-02-05T20:53:05 EET" name="login" finished-at="2022-02-05T20:54:31 EET" duration-ms="86142" status="PASS">
+        <test-method signature="login()[pri:2, instance:main.Start@4229bb3f]" started-at="2022-02-07T11:42:56 EET" name="login" finished-at="2022-02-07T11:43:27 EET" duration-ms="31178" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:819)
+at org.testng.Assert.assertEquals(Assert.java:829)
+at main.Start.login(Start.java:80)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:834)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method is-config="true" signature="closeApplication()[pri:0, instance:main.Start@4229bb3f]" started-at="2022-02-05T20:54:31 EET" name="closeApplication" finished-at="2022-02-05T20:54:33 EET" duration-ms="1560" status="PASS">
+        <test-method is-config="true" signature="closeApplication()[pri:0, instance:main.Start@4229bb3f]" started-at="2022-02-07T11:43:27 EET" name="closeApplication" finished-at="2022-02-07T11:43:29 EET" duration-ms="1496" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApplication -->

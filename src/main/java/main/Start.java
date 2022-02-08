@@ -18,6 +18,7 @@ import utility.ExcelUtility;
 import utility.Utility;
 
 public class Start extends ClassProperties {
+	//npm install -g newman      -   newman run <collection name> --data <file name> -n <no of iterations> -d <delay time> -e <environment name>
 
 	@Parameters("browser")
 	@BeforeTest
