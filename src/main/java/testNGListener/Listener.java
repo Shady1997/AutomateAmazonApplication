@@ -6,7 +6,6 @@ import org.testng.ITestResult;
 
 import main.ClassProperties;
 import main.Start;
-import utility.Utility;
 
 public class Listener extends ClassProperties implements ITestListener {
 

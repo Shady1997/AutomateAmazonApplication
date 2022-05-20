@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-02-07T11:42:18 EET" name="Suite" finished-at="2022-02-07T11:43:29 EET" duration-ms="71274">
+  <suite started-at="2022-03-17T10:26:07 EET" name="Suite" finished-at="2022-03-17T10:26:23 EET" duration-ms="15795">
     <groups>
       <group name="smoke">
-        <method signature="Start.login()[pri:2, instance:main.Start@4229bb3f]" name="login" class="main.Start"/>
-        <method signature="Start.startApplication()[pri:1, instance:main.Start@4229bb3f]" name="startApplication" class="main.Start"/>
+        <method signature="Start.login()[pri:2, instance:main.Start@7133da86]" name="login" class="main.Start"/>
+        <method signature="Start.startApplication()[pri:1, instance:main.Start@7133da86]" name="startApplication" class="main.Start"/>
       </group> <!-- smoke -->
     </groups>
-    <test started-at="2022-02-07T11:42:18 EET" name="TestChrome" finished-at="2022-02-07T11:43:29 EET" duration-ms="71274">
+    <test started-at="2022-03-17T10:26:07 EET" name="TestChrome" finished-at="2022-03-17T10:26:23 EET" duration-ms="15795">
       <class name="main.Start">
-        <test-method is-config="true" signature="prepareClassProperties(java.lang.String)[pri:0, instance:main.Start@4229bb3f]" started-at="2022-02-07T11:42:18 EET" name="prepareClassProperties" finished-at="2022-02-07T11:42:22 EET" duration-ms="4675" status="PASS">
+        <test-method is-config="true" signature="prepareClassProperties(java.lang.String)[pri:0, instance:main.Start@7133da86]" started-at="2022-03-17T10:26:07 EET" name="prepareClassProperties" finished-at="2022-03-17T10:26:10 EET" duration-ms="3077" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -22,24 +22,51 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- prepareClassProperties -->
-        <test-method signature="startApplication()[pri:1, instance:main.Start@4229bb3f]" started-at="2022-02-07T11:42:22 EET" name="startApplication" finished-at="2022-02-07T11:42:56 EET" duration-ms="33855" status="PASS">
+        <test-method signature="startApplication()[pri:1, instance:main.Start@7133da86]" started-at="2022-03-17T10:26:10 EET" name="startApplication" finished-at="2022-03-17T10:26:22 EET" duration-ms="11421" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startApplication -->
-        <test-method signature="login()[pri:2, instance:main.Start@4229bb3f]" started-at="2022-02-07T11:42:56 EET" name="login" finished-at="2022-02-07T11:43:27 EET" duration-ms="31178" status="FAIL">
-          <exception class="java.lang.AssertionError">
+        <test-method signature="login()[pri:2, instance:main.Start@7133da86]" started-at="2022-03-17T10:26:22 EET" name="login" finished-at="2022-03-17T10:26:22 EET" duration-ms="111" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
             <message>
-              <![CDATA[expected [true] but found [false]]]>
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=99.0.4844.51)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'EGCA1-0091', ip: '10.212.134.142', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\G525585\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:62007}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3003f1526f2d48c6649650224d228c2e
+*** Element info: {Using=xpath, value=//span[@id='nav-link-accountList-nav-line-1']}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-at org.testng.Assert.assertEquals(Assert.java:122)
-at org.testng.Assert.assertEquals(Assert.java:819)
-at org.testng.Assert.assertEquals(Assert.java:829)
-at main.Start.login(Start.java:80)
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=99.0.4844.51)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'EGCA1-0091', ip: '10.212.134.142', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\G525585\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:62007}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3003f1526f2d48c6649650224d228c2e
+*** Element info: {Using=xpath, value=//span[@id='nav-link-accountList-nav-line-1']}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy13.click(Unknown Source)
+at main.Start.login(Start.java:61)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -65,11 +92,11 @@ at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecut
 at java.base/java.lang.Thread.run(Thread.java:834)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method is-config="true" signature="closeApplication()[pri:0, instance:main.Start@4229bb3f]" started-at="2022-02-07T11:43:27 EET" name="closeApplication" finished-at="2022-02-07T11:43:29 EET" duration-ms="1496" status="PASS">
+        <test-method is-config="true" signature="closeApplication()[pri:0, instance:main.Start@7133da86]" started-at="2022-03-17T10:26:22 EET" name="closeApplication" finished-at="2022-03-17T10:26:23 EET" duration-ms="1119" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApplication -->
