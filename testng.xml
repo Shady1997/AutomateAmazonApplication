@@ -2,18 +2,15 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <!-- to run test sequentially change thread count from 2 to 1 and enable 
 	firefox -->
-<suite name="Suite" parallel="tests" thread-count="2">
+<suite name="Amazon Web Application" parallel="tests"
+	thread-count="2">
 	<listeners>
 		<listener class-name="reports.MyListener" />
 	</listeners>
-	<test name="TestChrome">
+	<test name="Test Login to Amazon Web Application">
 		<parameter name="browser" value="Chrome" />
 		<classes>
-			<class name="main.Start">
-				<methods>
-					<exclude name="chooseDragAndDrop" />
-				</methods>
-			</class>
+			<class name="test_cases.TestBase" />
 		</classes>
 	</test>
 	<!--<test name="TestFirefox"> <parameter name="browser" value="Firefox" 

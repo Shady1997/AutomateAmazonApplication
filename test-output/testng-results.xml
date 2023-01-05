@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-03-17T10:26:07 EET" name="Suite" finished-at="2022-03-17T10:26:23 EET" duration-ms="15795">
+  <suite started-at="2022-06-24T18:46:35 EET" name="Amazon Web Application" finished-at="2022-06-24T18:49:20 EET" duration-ms="164414">
     <groups>
       <group name="smoke">
-        <method signature="Start.login()[pri:2, instance:main.Start@7133da86]" name="login" class="main.Start"/>
-        <method signature="Start.startApplication()[pri:1, instance:main.Start@7133da86]" name="startApplication" class="main.Start"/>
+        <method signature="TestBase.login()[pri:2, instance:test_cases.TestBase@156b88f5]" name="login" class="test_cases.TestBase"/>
+        <method signature="TestBase.startApplication()[pri:1, instance:test_cases.TestBase@156b88f5]" name="startApplication" class="test_cases.TestBase"/>
       </group> <!-- smoke -->
     </groups>
-    <test started-at="2022-03-17T10:26:07 EET" name="TestChrome" finished-at="2022-03-17T10:26:23 EET" duration-ms="15795">
-      <class name="main.Start">
-        <test-method is-config="true" signature="prepareClassProperties(java.lang.String)[pri:0, instance:main.Start@7133da86]" started-at="2022-03-17T10:26:07 EET" name="prepareClassProperties" finished-at="2022-03-17T10:26:10 EET" duration-ms="3077" status="PASS">
+    <test started-at="2022-06-24T18:46:35 EET" name="Test Login to Amazon Web Application" finished-at="2022-06-24T18:49:20 EET" duration-ms="164414">
+      <class name="test_cases.TestBase">
+        <test-method is-config="true" signature="prepareClassProperties(java.lang.String)[pri:0, instance:test_cases.TestBase@156b88f5]" started-at="2022-06-24T18:46:35 EET" name="prepareClassProperties" finished-at="2022-06-24T18:46:42 EET" duration-ms="7037" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -22,85 +22,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- prepareClassProperties -->
-        <test-method signature="startApplication()[pri:1, instance:main.Start@7133da86]" started-at="2022-03-17T10:26:10 EET" name="startApplication" finished-at="2022-03-17T10:26:22 EET" duration-ms="11421" status="PASS">
+        <test-method signature="startApplication()[pri:1, instance:test_cases.TestBase@156b88f5]" started-at="2022-06-24T18:46:42 EET" name="startApplication" description="Start Amazon Web Application" finished-at="2022-06-24T18:47:28 EET" duration-ms="45763" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startApplication -->
-        <test-method signature="login()[pri:2, instance:main.Start@7133da86]" started-at="2022-03-17T10:26:22 EET" name="login" finished-at="2022-03-17T10:26:22 EET" duration-ms="111" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchWindowException">
-            <message>
-              <![CDATA[no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=99.0.4844.51)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'EGCA1-0091', ip: '10.212.134.142', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\G525585\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:62007}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 3003f1526f2d48c6649650224d228c2e
-*** Element info: {Using=xpath, value=//span[@id='nav-link-accountList-nav-line-1']}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=99.0.4844.51)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'EGCA1-0091', ip: '10.212.134.142', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\G525585\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:62007}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 3003f1526f2d48c6649650224d228c2e
-*** Element info: {Using=xpath, value=//span[@id='nav-link-accountList-nav-line-1']}
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at com.sun.proxy.$Proxy13.click(Unknown Source)
-at main.Start.login(Start.java:61)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-at java.base/java.lang.Thread.run(Thread.java:834)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+        <test-method signature="login()[pri:2, instance:test_cases.TestBase@156b88f5]" started-at="2022-06-24T18:47:28 EET" name="login" description="Login to Amazon Web Application" finished-at="2022-06-24T18:49:16 EET" duration-ms="107836" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method is-config="true" signature="closeApplication()[pri:0, instance:main.Start@7133da86]" started-at="2022-03-17T10:26:22 EET" name="closeApplication" finished-at="2022-03-17T10:26:23 EET" duration-ms="1119" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:test_cases.TestBase@156b88f5]" started-at="2022-06-24T18:49:16 EET" name="tearDown" finished-at="2022-06-24T18:49:20 EET" duration-ms="3580" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- closeApplication -->
-      </class> <!-- main.Start -->
-    </test> <!-- TestChrome -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- tearDown -->
+      </class> <!-- test_cases.TestBase -->
+    </test> <!-- Test Login to Amazon Web Application -->
+  </suite> <!-- Amazon Web Application -->
 </testng-results>
